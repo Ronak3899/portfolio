@@ -892,6 +892,7 @@ body {
     .hero-contact {
         flex-direction: column;
         gap: 1rem;
+        align-items:center;
     }
     
     .experience-header {
@@ -928,4 +929,10 @@ body {
     .skill-category {
         min-width: auto;
     }
+    .scroll-indicator{display:none;}
+}
+@media (max-width: 395px) {
+.hero-content{
+    padding-top: 100px;
+}
 }
