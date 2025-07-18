@@ -1,34 +1,80 @@
 
 // Global variables
 let projects = [
-    {
-        id: '1',
-        name: 'WooCommerce Google Contacts Sync',
-        description: 'A WordPress plugin that automatically syncs WooCommerce customer contacts with Google Contacts using real-time updates, duplicate prevention, and embedded support videos.',
-        image: 'https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=600&h=400&fit=crop',
-        link: 'https://example.com/project1',
-        github: 'https://github.com/ronakhapaliya/woo-google-contacts-sync',
-        technologies: ['WordPress', 'PHP', 'Google Contacts API', 'WooCommerce', 'JavaScript']
-    },
-    {
-        id: '2',
-        name: 'Dynamic PDF Generation System',
-        description: 'A system that allows users to customize and download product datasheets on demand with real-time customization options and responsive design.',
-        image: 'https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?w=600&h=400&fit=crop',
-        link: 'https://example.com/project2',
-        github: 'https://github.com/ronakhapaliya/dynamic-pdf-generator',
-        technologies: ['PHP', 'JavaScript', 'PDF Generation', 'MySQL', 'CSS3']
-    },
-    {
-        id: '3',
-        name: 'Headless WordPress with React',
-        description: 'A modern headless WordPress setup using React for frontend and WordPress as a backend CMS, providing fast performance and excellent user experience.',
-        image: 'https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=600&h=400&fit=crop',
-        link: 'https://example.com/project3',
-        github: 'https://github.com/ronakhapaliya/headless-wp-react',
-        technologies: ['React', 'WordPress REST API', 'JavaScript', 'CSS3', 'Headless CMS']
-    }
+  {
+    id: '1',
+    name: 'Buy The Bundle',
+    description: 'A custom digital subscription platform built on WordPress and integrated with WooCommerce, offering access to multiple premium tools under a single membership.',
+    image: './images/btb.png',
+    link: 'https://example.com/project1',
+    technologies: ['WordPress', 'Elementor', 'Payment Gateway', 'WooCommerce']
+  },
+  {
+    id: '2',
+    name: 'NSP',
+    description: 'A managed IT and cybersecurity services provider based in New Zealand, delivering solutions like cloud infrastructure, secure email, incident response, and modern workplace integration.',
+    image: './images/nsp.png',
+    link: 'https://nsp.co.nz/',
+    technologies: ['WordPress', 'ACF', 'Custom Theme', 'CPT']
+  },
+  {
+    id: '3',
+    name: 'Finesse Direct',
+    description: 'A digital transformation and AI-enabled software integration partner serving enterprise clients in BFSI, government, healthcare, and energy sectors, with a global presence and a team of 400+ professionals.',
+    image: './images/finaese.png',
+    link: 'https://finessedirect.com',
+    technologies: ['WordPress', 'ACF', 'Custom Theme', 'CPT']
+  },
+  {
+    id: '4',
+    name: 'Total Ninja',
+    description: 'Africa’s largest inflatable and obstacle course park brand, offering indoor activity zones, parties, team-building events, and merchandise across multiple cities in South Africa.',
+    image: './images/totalninja.png',
+    link: 'https://totalninja.co.za/',
+    technologies: ['WordPress', 'Divi', 'CPT']
+  },
+  {
+    id: '5',
+    name: 'AAdvantage Laundry Systems',
+    description: 'A commercial and industrial laundry equipment provider in the US, offering equipment sales, leasing (CleanCare program), spare parts, service, and technical support.',
+    image: './images/aadvantages.png',
+    link: 'https://aadvantagelaundry.spynrtech.com',
+    technologies: ['WordPress', 'Elementor', 'CPT']
+  },
+  {
+    id: '6',
+    name: 'ABE’S Electric Inc.',
+    description: 'A licensed electrical contractor based in Florida, offering residential, commercial, and industrial electrical services, including generators, financing options, and special discounts.',
+    image: './images/abes.png',
+    link: 'https://abeselectric.com/',
+    technologies: ['WordPress', 'Elementor', 'CPT']
+  },
+  {
+    id: '7',
+    name: 'ContactSync – Google Contacts Integration for WooCommerce',
+    description: 'A WordPress plugin that syncs WooCommerce customer data with Google Contacts in real time, streamlining contact management and CRM workflows.',
+    image: './images/contact-sync.png',
+    link: 'https://wordpress.org/plugins/contactsync-integration-of-google-contacts-for-woocommerce/',
+    technologies: ['WordPress Plugin', 'WooCommerce', 'Google Contacts API', 'CRM Sync']
+  },
+  {
+    id: '8',
+    name: 'Post Porter',
+    description: 'A developer-focused WordPress plugin to transfer posts and custom post types between sites using the REST API, with secure key-based authentication and background processing support.',
+    image: './images/post-porter.png',
+    link: 'https://wordpress.org/plugins/post-porter/',
+    technologies: ['WordPress Plugin', 'REST API', 'Background Processing']
+  },
+  {
+    id: '9',
+    name: 'Wot Elementor Widgets',
+    description: 'A lightweight Elementor plugin that adds flexible widgets like TabFlex, Tab Slider, Post Slider, and Testimonials Slider to enhance site design and interactivity.',
+    image: './images/wot-widget.png',
+    link: 'https://wordpress.org/plugins/wot-elementor-widgets/',
+    technologies: ['WordPress Plugin', 'Elementor', 'Custom Widgets']
+  }
 ];
+
 
 let editingProjectId = null;
 
@@ -150,10 +196,6 @@ function renderProjects() {
                 <p class="project-description">${project.description}</p>
                 <div class="project-technologies">
                     ${project.technologies.map(tech => `<span class="tech-tag">${tech}</span>`).join('')}
-                </div>
-                <div class="project-links">
-                    ${project.link ? `<span style="font-size: 0.875rem; color: var(--text-muted);">Click to view project</span>` : ''}
-                    ${project.github ? `<span style="font-size: 0.875rem; color: var(--text-muted);">GitHub available</span>` : ''}
                 </div>
             </div>
         </div>
