@@ -296,7 +296,9 @@ body {
     gap: 0.5rem;
     font-size: 0.875rem;
 }
-
+.contact-item span{ 
+    line-height:1;
+}
 .scroll-indicator {
     position: absolute;
     bottom: 2rem;
@@ -613,6 +615,7 @@ body {
     align-items: center;
     gap: 1rem;
     transition: var(--transition);
+    flex-wrap:wrap;
 }
 
 .contact-card:hover {
@@ -842,6 +845,8 @@ body {
     }
 }
 
+.dark-theme .social-icon svg path,.dark-theme .icon svg path,.dark-theme .contact-icon svg path{fill:#ffffffcf !important;}
+.contact-details a{word-wrap: break-word;}
 /* Responsive Design */
 @media (max-width: 768px) {
     .nav-menu {
