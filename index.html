@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ronak Hapaliya - WordPress Developer & Full-Stack Engineer</title>
+    <meta name="description" content="WordPress developer with 2+ years experience in custom theme and plugin development. Proficient in PHP, JavaScript, React, and modern web technologies.">
+    <meta name="author" content="Ronak Hapaliya">
+    
+    <meta property="og:title" content="Ronak Hapaliya - WordPress Developer Portfolio">
+    <meta property="og:description" content="WordPress developer with 2+ years experience in custom theme and plugin development. Proficient in PHP, JavaScript, React, and modern web technologies.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="resume.png">
+    
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@ronakhapaliya">
+    <meta name="twitter:image" content="resume.png">
+    
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="resume.png" type="image/png">
+</head>
+<body class="dark-theme">
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <h1>Ronak Hapaliya</h1>
+            </div>
+            
+            <div class="nav-menu" id="nav-menu">
+                <a href="#hero" class="nav-link active" data-section="hero">Home</a>
+                <a href="#experience" class="nav-link" data-section="experience">Experience</a>
+                <a href="#skills" class="nav-link" data-section="skills">Skills</a>
+                <a href="#projects" class="nav-link" data-section="projects">Projects</a>
+                <a href="#contact" class="nav-link" data-section="contact">Contact</a>
+            </div>
+            
+            <div class="nav-actions">
+                <button class="theme-toggle" id="theme-toggle">
+                    <span class="theme-icon">☀️</span>
+                </button>
+                <div class="nav-toggle" id="nav-toggle">
+                    <span class="hamburger"></span>
+                    <span class="hamburger"></span>
+                    <span class="hamburger"></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero">
+            <div class="hero-background"></div>
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">Ronak Hapaliya</h1>
+                    <h2 class="hero-subtitle">WordPress Full-Stack Developer</h2>
+                    <p class="hero-description">
+                        WordPress developer with over 2 years of hands-on experience in custom theme and plugin development. 
+                        Proficient in PHP, HTML5, CSS3, JavaScript, and MySQL. Experienced in building fast, responsive websites 
+                        that meet client requirements, with a strong focus on performance, clean code, and third-party API integration.
+                    </p>
+                    
+                    <div class="hero-buttons">
+                        <button class="btn btn-primary" onclick="scrollToSection('contact')">Get In Touch</button>
+                        <button class="btn btn-outline" onclick="window.open('resume.png', '_blank')">View Resume</button>
+                    </div>
+                    
+                    <div class="hero-contact">
+                        <div class="contact-item">
+                            <span class="icon">📧</span>
+                            <span>ronakhapaliya2001@gmail.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <span class="icon">📞</span>
+                            <span>+91 9910504600</span>
+                        </div>
+                        <div class="contact-item">
+                            <span class="icon">📍</span>
+                            <span>Ahmedabad</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="scroll-indicator">
+                <div class="scroll-arrow"></div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="experience">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Experience</h2>
+                    <p class="section-subtitle">My professional journey and achievements</p>
+                </div>
+                <div class="experience-timeline">
+                    <div class="experience-item">
+                        <div class="experience-card">
+                            <div class="experience-header">
+                                <div class="experience-info">
+                                    <h3 class="experience-title">Junior WordPress Developer</h3>
+                                    <h4 class="experience-company">WebOccult Technologies Pvt. Ltd.</h4>
+                                </div>
+                                <div class="experience-meta">
+                                    <div class="experience-date">
+                                        <span class="icon">📅</span>
+                                        August 2023 - Present
+                                    </div>
+                                    <div class="experience-location">
+                                        <span class="icon">📍</span>
+                                        Ahmedabad
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="experience-content">
+                                <p class="experience-description">
+                                    WordPress developer with over 2 years of hands-on experience in custom theme and plugin development.
+                                </p>
+                                <div class="achievements">
+                                    <h4>Key Achievements:</h4>
+                                    <ul>
+                                        <li>Developed a WordPress plugin to sync WooCommerce customer contacts with Google Contacts, addressing a key integration gap in the ecosystem</li>
+                                        <li>Created a dynamic PDF generation system that allows users to customize and download product datasheets on demand</li>
+                                        <li>Designed and built a full-featured website from scratch based on provided wireframes and business requirements</li>
+                                        <li>Customized WooCommerce dashboards and extended e-commerce functionality to align with unique client workflows</li>
+                                        <li>Resolved complex plugin conflicts by coordinating directly with third-party developers</li>
+                                        <li>Built flexible admin panels using Advanced Custom Fields (ACF) and custom meta boxes</li>
+                                        <li>Built a headless WordPress setup using React for frontend and WordPress as a backend CMS</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="experience-item">
+                        <div class="experience-card">
+                            <div class="experience-header">
+                                <div class="experience-info">
+                                    <h3 class="experience-title">Trainee WordPress Developer</h3>
+                                    <h4 class="experience-company">WebOccult Technologies Pvt. Ltd.</h4>
+                                </div>
+                                <div class="experience-meta">
+                                    <div class="experience-date">
+                                        <span class="icon">📅</span>
+                                        January 2023 - July 2023
+                                    </div>
+                                    <div class="experience-location">
+                                        <span class="icon">📍</span>
+                                        Ahmedabad
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="experience-content">
+                                <p class="experience-description">
+                                    Gained hands-on experience building custom WordPress themes and plugins focused on scalability, security, and performance.
+                                </p>
+                                <div class="achievements">
+                                    <h4>Key Achievements:</h4>
+                                    <ul>
+                                        <li>Used page builders like Elementor and Divi to quickly create layouts and flexible designs</li>
+                                        <li>Tested and fixed issues in themes and plugins across different environments</li>
+                                        <li>Built easy-to-use content management features by creating custom post types and taxonomies</li>
+                                        <li>Set up and customized WooCommerce extensions for payment processing and shipping options</li>
+                                        <li>Helped improve site speed by optimizing database queries and setting up caching</li>
+                                        <li>Applied security measures like input validation and sanitization to protect WordPress sites</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Skills & Technologies</h2>
+                    <p class="section-subtitle">Technical expertise and tools I work with</p>
+                </div>
+                
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h3 class="skill-category-title">Languages & Core Technologies</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">PHP</span>
+                            <span class="skill-tag">JavaScript</span>
+                            <span class="skill-tag">HTML5</span>
+                            <span class="skill-tag">CSS3</span>
+                            <span class="skill-tag">MySQL</span>
+                            <span class="skill-tag">jQuery</span>
+                            <span class="skill-tag">AJAX</span>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-category">
+                        <h3 class="skill-category-title">WordPress Development</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Custom Theme Development</span>
+                            <span class="skill-tag">Custom Plugin Development</span>
+                            <span class="skill-tag">WooCommerce</span>
+                            <span class="skill-tag">Elementor</span>
+                            <span class="skill-tag">Divi</span>
+                            <span class="skill-tag">Gutenberg</span>
+                            <span class="skill-tag">Advanced Custom Fields (ACF)</span>
+                            <span class="skill-tag">Custom Post Types (CPT)</span>
+                            <span class="skill-tag">WordPress REST API</span>
+                            <span class="skill-tag">Headless WordPress</span>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-category">
+                        <h3 class="skill-category-title">Frontend Technologies</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">React</span>
+                            <span class="skill-tag">Responsive Design</span>
+                            <span class="skill-tag">CSS Grid</span>
+                            <span class="skill-tag">Flexbox</span>
+                            <span class="skill-tag">Bootstrap</span>
+                            <span class="skill-tag">Tailwind CSS</span>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-category">
+                        <h3 class="skill-category-title">Tools & Platforms</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Git</span>
+                            <span class="skill-tag">GitHub</span>
+                            <span class="skill-tag">WP-CLI</span>
+                            <span class="skill-tag">cPanel</span>
+                            <span class="skill-tag">Website Speed Optimization</span>
+                            <span class="skill-tag">SEO Optimization</span>
+                            <span class="skill-tag">Google Analytics</span>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-category">
+                        <h3 class="skill-category-title">Integration & APIs</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Google Contacts API</span>
+                            <span class="skill-tag">Third-party API Integration</span>
+                            <span class="skill-tag">Payment Gateway Integration</span>
+                            <span class="skill-tag">Email Marketing Integration</span>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-category">
+                        <h3 class="skill-category-title">Development Practices</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Version Control</span>
+                            <span class="skill-tag">Debugging</span>
+                            <span class="skill-tag">Performance Optimization</span>
+                            <span class="skill-tag">Security Best Practices</span>
+                            <span class="skill-tag">Responsive Web Design</span>
+                            <span class="skill-tag">Cross-browser Compatibility</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Projects</h2>
+                    <p class="section-subtitle">Showcase of my work and contributions</p>
+                </div>
+                
+                <div class="projects-grid" id="projects-grid">
+                    <!-- Projects will be rendered here by JavaScript -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Get In Touch</h2>
+                    <p class="section-subtitle">Let's discuss your next project or opportunity</p>
+                </div>
+                
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <h3>Contact Information</h3>
+                        <div class="contact-cards">
+                            <div class="contact-card">
+                                <div class="contact-icon">✉</div>
+                                <div class="contact-details">
+                                    <p class="contact-label">Email</p>
+                                    <a href="mailto:ronakhapaliya2001@gmail.com" class="contact-value">ronakhapaliya2001@gmail.com</a>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-card">
+                                <div class="contact-icon">📞</div>
+                                <div class="contact-details">
+                                    <p class="contact-label">Phone</p>
+                                    <a href="tel:+919910504600" class="contact-value">+91 9910504600</a>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-card">
+                                <div class="contact-icon">📍</div>
+                                <div class="contact-details">
+                                    <p class="contact-label">Location</p>
+                                    <p class="contact-value">Ahmedabad, India</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="social-links">
+                        <h3>Connect With Me</h3>
+                        <div class="social-buttons">
+                            <a href="https://linkedin.com/in/ronak-hapaliya" target="_blank" class="social-btn">
+                                <span class="social-icon">💼</span>
+                                LinkedIn
+                            </a>
+                            <a href="https://github.com/ronakhapaliya" target="_blank" class="social-btn">
+                                <span class="social-icon">📱</span>
+                                GitHub
+                            </a>
+                            <a href="https://profiles.wordpress.org/ronak3899/" target="_blank" class="social-btn">
+                                <span class="social-icon">🔗</span>
+                                WordPress Profile
+                            </a>
+                        </div>
+                        
+                        <div class="open-source">
+                            <h4>Open Source Contributions</h4>
+                            <p>I actively contribute to WordPress plugins/themes and submit content improvements to the WordPress Learn platform.</p>
+                            <ul>
+                                <li>ContactSync Plugin - WordPress plugin for WooCommerce</li>
+                                <li>Post Porter Plugin - REST API-based content import/export</li>
+                                <li>Elementor Widgets - Custom widgets collection</li>
+                                <li>Neat.note Theme - Lightweight blogging theme</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
